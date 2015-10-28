@@ -1,47 +1,38 @@
-# Ember-workshop
+# Ember Workshop
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+App for demonstating how an Ember.js application is structured, providing a playground for making changes on your own.  Great for learning about the framework and usage during short beginner-oriented workshops.
 
-## Prerequisites
+## Development Environment
 
-You will need the following things properly installed on your computer.
+### [Local Dev][local-setup]
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+> Recommended for people already comfortable with tools like Node and NPM
 
-## Installation
+**Pros:**
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+- Better performance
+- LiveReload when files change
 
-## Running / Development
+**Cons:**
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+- Need Node and NPM installed already, which can be tricky to get right
 
-### Code Generators
+Instructions for getting started with local development can be found [here][local-setup].
 
-Make use of the many generators for code, try `ember help generate` for more details
+### [Nitrous.io][nitrous-setup]
 
-### Running Tests
+> Cloud environment for working on projects on a server.  Recommended for those new to Web Development that may not have any of their environment set up yet but want to get started with relatively little setup.
 
-* `ember test`
-* `ember test --server`
+**Pros:**
 
-### Building
+- Don't worry about installing anything locally
+- Work from anywhere, with your code stored safely in [The Cloud](https://xkcd.com/908/)
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+**Cons:**
 
-### Deploying
+- Much slower than local development due to limited processing power and the nature of working in a cloud IDE
 
-Specify what it takes to deploy your app.
+Instructions for getting started with Nitrous.io can be found [here][nitrous-setup].
 
 ## Further Reading / Useful Links
 
@@ -51,3 +42,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+[nitrous-setup]: https://github.com/alexlafroscia/ember-workshop/wiki/Nitrous.io-Setup "Nitrous.io Setup Guide"
+[local-setup]: https://github.com/alexlafroscia/ember-workshop/wiki/Local-Setup "Local Setup Guide"
