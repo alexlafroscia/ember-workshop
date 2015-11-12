@@ -10,11 +10,15 @@
 {{/paper-toolbar}}
 {{#paper-content class="chat-ui md-padding"}}
   <div class='messages'>
-    {{#each model.messages as |chat|}}
+    {{#each messages as |chat|}}
       {{chat-message message=chat}}
     {{/each}}
   </div>
   <div class='chat-input'>
-    {{input type='test'}}
+    {{paper-input
+        type='text'
+        label='Your Message'
+        value=chatMessageContent
+        event-enter=(action 'sendMessage')}}
   </div>
 {{/paper-content}}
