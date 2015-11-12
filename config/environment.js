@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-workshop',
     environment: environment,
-    baseURL: '/ember-workshop',
+    baseURL: '/',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {
@@ -29,6 +29,10 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+  }
+
+  if (environment === 'production') {
+    ENV.baseURL = '/ember-workshop';
   }
 
   ENV.contentSecurityPolicy = {
