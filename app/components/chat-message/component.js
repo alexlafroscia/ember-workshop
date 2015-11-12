@@ -5,8 +5,12 @@ const { alias } = computed;
 
 export default Component.extend({
 
+  classNameBindings: ['sent'],
+
   message: null,
 
-  content: alias('message.content')
+  content: alias('message.content'),
+
+  sent: alias('message.sent')
 
 });
