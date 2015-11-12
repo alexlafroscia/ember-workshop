@@ -1,3 +1,28 @@
-<h2 id="title">Welcome to Ember</h2>
+<div id="paper-wormhole"></div>
 
-{{outlet}}
+{{#paper-nav-container}}
+  {{#paper-sidenav class="md-sidenav-left md-whiteframe-z2" locked-open="gt-sm"}}
+    {{#paper-toolbar}}
+        <div class="md-toolbar-tools">
+          <div class="logo">
+            <strong>Ember Workshop Chat</strong>
+          </div>
+        </div>
+    {{/paper-toolbar}}
+    {{#paper-content}}
+      {{#paper-list}}
+        {{#each model as |conversation|}}
+          {{#link-to 'chat' conversation}}
+            {{#paper-item}}
+              {{link-to conversation.name 'chat' conversation }}
+            {{/paper-item}}
+          {{/link-to}}
+        {{/each}}
+      {{/paper-list}}
+    {{/paper-content}}
+  {{/paper-sidenav}}
+
+  <div layout="column" tabindex="-1" role="main" flex>
+    {{outlet}}
+  </div>
+{{/paper-nav-container}}
