@@ -7,5 +7,7 @@
   </div>
 {{/paper-toolbar}}
 {{#paper-content class="md-padding"}}
-  Hello, world
+  {{#each model.messages as |chat|}}
+    {{chat.content}}
+  {{/each}}
 {{/paper-content}}
