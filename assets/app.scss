@@ -1,0 +1,8 @@
+@import 'ember-paper';
+
+.chat-ui {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 96px);
+  justify-content: space-between;
+}
